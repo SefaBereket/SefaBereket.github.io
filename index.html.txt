@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnNest - Küçük Adımlarla Büyük Geleceklere</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1', 
+                        accent: '#0EA5E9',  
+                        card: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        body: ['Nunito', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        .bg-grad-footer-fade {
+            background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+        }
+        .bg-grad-cta-button {
+            background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%);
+        }
+        details summary::-webkit-details-marker { display: none; }
+        details summary { list-style: none; }
+    </style>
+</head>
+<body class="font-body bg-slate-50 text-slate-800 antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md shadow-indigo-200">LN</div>
+                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">LearnNest</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-600">
+                <a href="#" class="text-indigo-600 border-b-2 border-indigo-600 pb-1">Ana Sayfa</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Hakkımızda</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Blog</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Kaynaklar</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Etkinlikler</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">İletişim</a>
+            </nav>
+            
+            <div>
+                <a href="#newsletter" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-bold shadow-lg shadow-indigo-100 transition-all text-sm flex items-center gap-2">
+                    <i class="ph ph-envelope-simple text-base"></i> Bültene Katıl
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-white pt-12 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                        Küçük Adımlarla <br>
+                        <span class="text-indigo-600">Büyük Geleceklere</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Çocukların gelişimini desteklemek, aileleri bilinçlendirmek ve eğitimciler için ilham verici içerikler sunuyoruz.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#blog" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-indigo-200 transition-all transform hover:-translate-y-0.5">
+                            Yazıları Keşfet <i class="ph ph-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 relative flex justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-amber-100 rounded-3xl -rotate-2 scale-95 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1540479859555-17af45c78a02?auto=format&fit=crop&w=800&q=80" 
+                         alt="Çocuk gelişim ve eğitim" 
+                         class="relative rounded-3xl shadow-2xl object-cover w-full max-w-2xl h-[400px] sm:h-[480px]" />
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-slate-50 p-4 rounded-2xl flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-2xl mb-2"><i class="ph ph-teddy-bear"></i></div>
+                    <span class="font-bold text-sm text-slate-800">Okul Öncesi Eğitim</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-2"><i class="ph ph-puzzle-piece"></i></div>
+                    <span class="font-bold text-sm text-slate-800">Özel Eğitim</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center text-rose-600 text-2xl mb-2"><i class="ph ph-users"></i></div>
+                    <span class="font-bold text-sm text-slate-800">Ebeveyn Rehberleri</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 text-2xl mb-2"><i class="ph ph-paint-brush"></i></div>
+                    <span class="font-bold text-sm text-slate-800">Etkinlik & Oyunlar</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl flex flex-col items-center text-center hover:shadow-md transition-shadow cursor-pointer col-span-2 md:col-span-1">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-2"><i class="ph ph-book-open"></i></div>
+                    <span class="font-bold text-sm text-slate-800">Öğretmen Kaynakları</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-sm font-bold inline-flex items-center gap-1.5 mb-3">
+                    <i class="ph ph-sparkle"></i> Blog Köşesi
+                </span>
+                <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">Son Yazılar</h2>
+                <p class="text-slate-600 mt-2">Tıklayın, yazı açılır ve hemen uygulayabileceğiniz önerileri keşfedin.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="p-5 sm:p-6 cursor-pointer flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 sm:gap-6">
+                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-50 rounded-xl flex items-center justify-center text-amber-500 text-3xl shrink-0">
+                                <i class="ph ph-palette"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-amber-600 uppercase tracking-wider block mb-1">Okul Öncesi</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-950 group-hover:text-indigo-600 transition-colors">
+                                    Eğlenceli Dikkat Geliştirici Oyunlar
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center shrink-0 group-open:rotate-45 transition-transform">
+                            <i class="ph ph-plus text-lg text-slate-600"></i>
+                        </div>
+                    </summary>
+                    <div class="px-5 pb-6 sm:px-6 sm:pb-6 pt-2 border-t border-slate-50 ml-0 sm:ml-24">
+                        <p class="text-slate-600 leading-relaxed">
+                            Okul öncesi dönemdeki çocukların odaklanma sürelerini artırmak için evde yapılabilecek dikkat oyunları oldukça etkilidir. Eşleştirme kartları, labirent bulmacaları ve ritim taklit oyunları çocukların odak becerilerini eğlendirerek geliştirir.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden transition-all duration-300" open>
+                    <summary class="p-5 sm:p-6 cursor-pointer flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 sm:gap-6">
+                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-rose-50 rounded-xl flex items-center justify-center text-rose-500 text-3xl shrink-0">
+                                <i class="ph ph-users-three"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-rose-600 uppercase tracking-wider block mb-1">Ebeveyn Rehberi</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-950 group-hover:text-indigo-600 transition-colors">
+                                    Okula Uyum Süreci
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center shrink-0 group-open:rotate-45 transition-transform">
+                            <i class="ph ph-plus text-lg text-slate-600"></i>
+                        </div>
+                    </summary>
+                    <div class="px-5 pb-6 sm:px-6 sm:pb-6 pt-2 border-t border-slate-50 ml-0 sm:ml-24">
+                        <p class="text-slate-600 leading-relaxed">
+                            Çocukların okula uyum sürecini kolaylaştırmak için duygusal hazırlık, rutin oluşturma ve güven veren iletişim adımlarını birlikte ele alın. Sabah vedalarını kısa tutmak, öğretmenle düzenli iletişim kurmak ve evde küçük sorumluluklar vermek bu süreci destekler.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="p-5 sm:p-6 cursor-pointer flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 sm:gap-6">
+                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-500 text-3xl shrink-0">
+                                <i class="ph ph-teddy-bear"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block mb-1">Evde Etkinlik</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-950 group-hover:text-indigo-600 transition-colors">
+                                    Evde Oyun Etkinlikleri
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center shrink-0 group-open:rotate-45 transition-transform">
+                            <i class="ph ph-plus text-lg text-slate-600"></i>
+                        </div>
+                    </summary>
+                    <div class="px-5 pb-6 sm:px-6 sm:pb-6 pt-2 border-t border-slate-50 ml-0 sm:ml-24">
+                        <p class="text-slate-600 leading-relaxed">
+                            Evde kolayca uygulanabilecek yaratıcı oyun etkinlikleri ile çocukların dil, motor ve sosyal becerilerini destekleyin. Geri dönüşüm malzemeleriyle sanat çalışmaları, rol yapma oyunları ve hikaye tamamlama etkinlikleri aile içi etkileşimi de artırır.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-grad-footer-fade border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">Neden LearnNest?</h2>
+                <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Aile ve eğitimciler için güvenli, uygulanabilir ve çocuk merkezli içerik deneyimi.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 relative overflow-hidden group hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="ph ph-shield-check"></i>
+                    </div>
+                    <div class="absolute top-6 right-6 text-slate-100 text-6xl opacity-40"><i class="ph ph-book-open"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Güvenilir İçerik</h3>
+                    <p class="text-slate-600 leading-relaxed">Uzman görüşleriyle hazırlanmış, doğrulanmış ve uygulanabilir eğitim içerikleri sunuyoruz.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 relative overflow-hidden group hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="ph ph-heart"></i>
+                    </div>
+                    <div class="absolute top-6 right-6 text-slate-100 text-6xl opacity-40"><i class="ph ph-teddy-bear"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Çocuk Odaklı Yaklaşım</h3>
+                    <p class="text-slate-600 leading-relaxed">Her içeriği çocukların gelişim düzeyine, ilgisine ve öğrenme hızına uygun şekilde tasarlıyoruz.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 relative overflow-hidden group hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="ph ph-users-three"></i>
+                    </div>
+                    <div class="absolute top-6 right-6 text-slate-100 text-6xl opacity-40"><i class="ph ph-users"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Aile Ve Öğretmen İşbirliği</h3>
+                    <p class="text-slate-600 leading-relaxed">Aile ve öğretmen arasında güçlü iletişim kuran rehberlerle çocukların gelişimini birlikte destekliyoruz.</p>
+                </div>
+            </div>
+            
+            <div id="newsletter" class="mt-20 relative rounded-3xl bg-white border border-slate-100 shadow-xl p-8 sm:p-12 overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-50 rounded-full blur-3xl opacity-70"></div>
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-amber-50 rounded-full blur-3xl opacity-70"></div>
+                
+                <div class="relative flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <div class="w-20 h-20 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-500 text-4xl shrink-0">
+                            <i class="ph ph-palette"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Ücretsiz Eğitim İçeriklerine Katılın</h3>
+                            <p class="text-slate-600 mt-1">Yeni yazılar, etkinlikler ve eğitim kaynaklarından haberdar olun.</p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-auto shrink-0">
+                        <button class="w-full sm:w-auto bg-grad-cta-button text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+                            <i class="ph ph-envelope text-xl"></i> Bültene Katıl
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-b border-slate-100">
+            <div class="flex flex-wrap items-center justify-center gap-x-16 gap-y-4 text-slate-600 font-semibold text-sm">
+                <div class="flex items-center gap-2"><i class="ph ph-shield-check text-indigo-600 text-xl"></i> Güvenilir Bilgi</div>
+                <div class="flex items-center gap-2"><i class="ph ph-medal text-indigo-600 text-xl"></i> Uzman Görüşleri</div>
+                <div class="flex items-center gap-2"><i class="ph ph-star text-indigo-600 text-xl"></i> Yaratıcı Etkinlikler</div>
+                <div class="flex items-center gap-2"><i class="ph ph-heart text-indigo-600 text-xl"></i> Çocuk Odaklı Yaklaşım</div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-slate-400">
+            &copy; 2026 www.learnnest.com.tr. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>
